@@ -13,7 +13,7 @@ Bem-vindo ao meu repositório! Aqui você encontrará todas as minhas entregas, 
 *(Liste aqui as linguagens, ferramentas ou frameworks que você já conhece ou está aprendendo)*
 - HTML5, CSS3, JavaScript
 - Python
-- [Outra tecnologia]
+- Cobol
 
 ---
 
