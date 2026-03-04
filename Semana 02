@@ -1,0 +1,48 @@
+# Atividade Prática: O Dilema da IA Contratadora 🤖⚖️
+
+## 📋 Informações do Curso
+- **Curso:** Tecnologia em Sistemas para Internet
+- **Módulo:** 3
+- **Data:** 03/03/2026
+- **Componente Curricular:** Engenharia de Software
+- **Professor:** Gaio B. Oliveira
+- **Time:** [Insira o Nome do Time]
+
+---
+
+## 🚀 Proposta de Intervenção Técnica e Ética
+
+Nossa proposta baseia-se no princípio da **Responsabilidade Profissional**, priorizando a correção da raiz do problema (viés de dados) em vez de apenas mitigar sintomas. Optamos pela **Auditoria de Dados imediata (4 semanas)** combinada com uma arquitetura **Human-in-the-loop**.
+
+### 1. Análise Comparativa das Opções Técnicas
+
+| Solução | Prós (Vantagens) | Contras (Desafios) |
+| :--- | :--- | :--- |
+| **Lançar "Como Está"** | Velocidade de mercado; satisfação de investidores a curto prazo. | **Risco Jurídico Crítico (LGPD Art. 20)**; Discriminação algorítmica; Dano à reputação. |
+| **Human-in-the-loop** | Reduz descartes injustos; mantém a supervisão humana obrigatória. | Não resolve o viés do algoritmo; apenas "filtra" o erro na saída. |
+| **Toolkit de XAI** | Alta transparência; conformidade com o direito de explicação. | Pode expor lógica de negócio (IP); exige interface de usuário complexa. |
+| **Auditoria de Dados** | **Elimina o viés na fonte**; solução tecnicamente robusta e sustentável. | Atraso de 4 semanas no lançamento comercial. |
+
+### 2. Fundamentação Ética (ACM/IEEE & Sommerville)
+
+Nossa decisão está fundamentada nas seguintes diretrizes:
+
+*   **ACM/IEEE Cláusula 1.03:** Determina que o software só deve ser aprovado se houver crença segura de que é **seguro e atende às especificações**. Lançar um sistema que discrimina grupos minoritários viola a segurança social e a integridade dos dados.
+*   **ACM/IEEE Cláusula 3.01:** Exige que engenheiros mantenham os **mais altos padrões profissionais**. Aceitar um erro sistêmico de viés por pressão comercial fere o julgamento profissional.
+*   **Sommerville (Cap. 1):** O autor destaca que a engenharia de software envolve responsabilidades que vão além da técnica. O respeito à **confidencialidade e aos direitos intelectuais** deve caminhar junto com a honestidade sobre as limitações do sistema.
+
+### 3. Impacto Financeiro: Custo do Atraso vs. Risco Jurídico
+
+| Variável de Impacto | Atraso Estratégico (4 Semanas) | Processo Judicial (LGPD/Discriminação) |
+| :--- | :--- | :--- |
+| **Custo Direto** | Operação de engenharia por +1 mês. | Multas de até 2% do faturamento (limite R$ 50mi). |
+| **Custo Indireto** | Entrada tardia no mercado (baixo risco). | Perda de contratos com grandes empresas (ESG). |
+| **Veredito** | Investimento em qualidade e segurança. | Risco de falência por passivo jurídico. |
+
+---
+
+## 🛠️ Plano de Ação (Roadmap)
+
+1. **Semanas 1-4:** Executar a Auditoria e Limpeza Estatística dos dados de treinamento.
+2. **Paralelo:** Implementar camada de **Explicabilidade (XAI)** para auditorias futuras.
+3. **Lançamento:** Produto com selo de **IA Ética**, utilizando o modelo *Human-in-the-loop* para o ranking final.
