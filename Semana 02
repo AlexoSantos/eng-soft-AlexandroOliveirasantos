@@ -1,48 +1,54 @@
-# Atividade Prática: O Dilema da IA Contratadora 🤖⚖️
+# Atividade Prática: O Dilema da IA Contratadora ⚖️🤖
 
-## 📋 Informações do Curso
+## 📝 Identificação
 - **Curso:** Tecnologia em Sistemas para Internet
 - **Módulo:** 3
 - **Data:** 03/03/2026
 - **Componente Curricular:** Engenharia de Software
 - **Professor:** Gaio B. Oliveira
-- **Time:** [Insira o Nome do Time]
+- **Estudantes:** Alexandro Oliveira dos Santos
+- **Estudantes:** André Lima
 
 ---
 
-## 🚀 Proposta de Intervenção Técnica e Ética
+## 🚀 Proposta de Intervenção: Estratégia Human-in-the-loop (HITL)
 
-Nossa proposta baseia-se no princípio da **Responsabilidade Profissional**, priorizando a correção da raiz do problema (viés de dados) em vez de apenas mitigar sintomas. Optamos pela **Auditoria de Dados imediata (4 semanas)** combinada com uma arquitetura **Human-in-the-loop**.
+Diante do dilema entre o lançamento ágil e o risco ético/jurídico de um algoritmo enviesado, nossa equipe optou pela implementação da solução **Human-in-the-loop**. Esta abordagem transforma a IA de uma ferramenta de "decisão autônoma" para uma ferramenta de "suporte à decisão".
 
-### 1. Análise Comparativa das Opções Técnicas
+### 1. Comparativo de Prós e Contras da Solução
 
-| Solução | Prós (Vantagens) | Contras (Desafios) |
+| Dimensão | Prós (Vantagens) | Contras (Desafios) |
 | :--- | :--- | :--- |
-| **Lançar "Como Está"** | Velocidade de mercado; satisfação de investidores a curto prazo. | **Risco Jurídico Crítico (LGPD Art. 20)**; Discriminação algorítmica; Dano à reputação. |
-| **Human-in-the-loop** | Reduz descartes injustos; mantém a supervisão humana obrigatória. | Não resolve o viés do algoritmo; apenas "filtra" o erro na saída. |
-| **Toolkit de XAI** | Alta transparência; conformidade com o direito de explicação. | Pode expor lógica de negócio (IP); exige interface de usuário complexa. |
-| **Auditoria de Dados** | **Elimina o viés na fonte**; solução tecnicamente robusta e sustentável. | Atraso de 4 semanas no lançamento comercial. |
-
-### 2. Fundamentação Ética (ACM/IEEE & Sommerville)
-
-Nossa decisão está fundamentada nas seguintes diretrizes:
-
-*   **ACM/IEEE Cláusula 1.03:** Determina que o software só deve ser aprovado se houver crença segura de que é **seguro e atende às especificações**. Lançar um sistema que discrimina grupos minoritários viola a segurança social e a integridade dos dados.
-*   **ACM/IEEE Cláusula 3.01:** Exige que engenheiros mantenham os **mais altos padrões profissionais**. Aceitar um erro sistêmico de viés por pressão comercial fere o julgamento profissional.
-*   **Sommerville (Cap. 1):** O autor destaca que a engenharia de software envolve responsabilidades que vão além da técnica. O respeito à **confidencialidade e aos direitos intelectuais** deve caminhar junto com a honestidade sobre as limitações do sistema.
-
-### 3. Impacto Financeiro: Custo do Atraso vs. Risco Jurídico
-
-| Variável de Impacto | Atraso Estratégico (4 Semanas) | Processo Judicial (LGPD/Discriminação) |
-| :--- | :--- | :--- |
-| **Custo Direto** | Operação de engenharia por +1 mês. | Multas de até 2% do faturamento (limite R$ 50mi). |
-| **Custo Indireto** | Entrada tardia no mercado (baixo risco). | Perda de contratos com grandes empresas (ESG). |
-| **Veredito** | Investimento em qualidade e segurança. | Risco de falência por passivo jurídico. |
+| **Técnica** | **Conformidade com LGPD (Art. 20):** Garante nativamente o direito à revisão humana. | Exige ajuste na UI/UX para facilitar a revisão dos 20% inferiores pelo recrutador. |
+| **Ética** | **Mitigação de Danos:** Evita o descarte injusto de candidatos minoritários por erro algorítmico. | Não elimina o viés do código original; apenas cria um "filtro de segurança". |
+| **Negócio** | **Time-to-market:** Permite o lançamento sem os meses de atraso de uma re-coleta de dados total. | Aumenta o custo operacional (tempo) do cliente final que utiliza o software. |
 
 ---
 
-## 🛠️ Plano de Ação (Roadmap)
+## 2. Fundamentação Ética e Profissional
 
-1. **Semanas 1-4:** Executar a Auditoria e Limpeza Estatística dos dados de treinamento.
-2. **Paralelo:** Implementar camada de **Explicabilidade (XAI)** para auditorias futuras.
-3. **Lançamento:** Produto com selo de **IA Ética**, utilizando o modelo *Human-in-the-loop* para o ranking final.
+Para garantir a integridade do projeto, baseamos esta decisão nos seguintes pilares:
+
+### 🛡️ Código de Ética ACM/IEEE
+* **Cláusula 1.03:** O software deve ser aprovado apenas se houver crença segura de que é seguro e atende às especificações. Ao manter um humano no ciclo, mitigamos o "dano" da discriminação, cumprindo o dever de segurança social.
+* **Cláusula 3.01:** Como engenheiros, devemos manter padrões profissionais de honestidade. Admitir o viés e criar uma salvaguarda (HITL) é um ato de integridade profissional superior ao lançamento de um sistema falho.
+
+### 📚 Visão de Sommerville (Engenharia de Software)
+Segundo Sommerville, a responsabilidade do engenheiro vai além do código; ela abrange a compreensão de que sistemas são **sociotécnicos**. A solução HITL reconhece que a falibilidade da IA deve ser compensada pelo julgamento moral humano, garantindo um sistema mais robusto e justo.
+
+---
+
+## 3. Análise Financeira e de Riscos
+
+| Cenário | Impacto Financeiro Estimado | Risco Reputacional |
+| :--- | :--- | :--- |
+| **Lançar sem HITL** | Multas de até **R$ 50 milhões** (LGPD) + Processos Coletivos. | **Crítico:** Marca associada a preconceito e discriminação. |
+| **Implementar HITL** | Custo baixo de desenvolvimento adicional de interface. | **Positivo:** Empresa líder em "IA Ética e Responsável". |
+
+---
+
+## 4. Conclusão da Intervenção
+
+A implementação do **Human-in-the-loop** é a escolha mais estratégica. Ela protege a startup juridicamente, mantém a agilidade comercial frente aos concorrentes e, acima de tudo, respeita os direitos fundamentais dos candidatos. 
+
+> **Próximo Passo:** Iniciar o desenvolvimento da dashboard de revisão para recrutadores e documentar a limitação do algoritmo nos termos de uso do software.
