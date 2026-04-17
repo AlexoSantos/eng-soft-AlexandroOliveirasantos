@@ -66,6 +66,7 @@ O sistema foca-se na antecipação de desastres naturais com alta precisão e in
 | Design e Prototipagem | 🏗️ Em progresso |
 | Desenvolvimento Backend (Python/PostGIS) | 📅 Planejado |
 | Testes de Integração | 📅 Planejado |
-
+| Dono do Projeto | Defesa Civil de São João da Boa Vista |
+| Gerente do Projeto | Alexandro Oliveira dos Santos |
 ---
 [cite_start]*Este documento segue o padrão de Requisitos de Software (SRS) v1.1[cite: 1, 41].*
