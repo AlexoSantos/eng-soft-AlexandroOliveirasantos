@@ -66,11 +66,4 @@
 
 ---
 
-## Slide 9 – Dica Final
-- A arquitetura é o **esqueleto do sistema**.  
-- Se for fraca, não aguenta milhões de usuários.  
-- Use os conceitos de Sommerville para criticar e analisar como os padrões modernos evoluíram dos clássicos.  
-
----
-
 📌 **Valor da avaliação: 25 softcoins**
