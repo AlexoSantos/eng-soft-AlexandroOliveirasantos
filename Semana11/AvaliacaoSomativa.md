@@ -65,5 +65,3 @@
 - **Apresentação Oral**: explicação fluida e interativa.  
 
 ---
-
-📌 **Valor da avaliação: 25 softcoins**
