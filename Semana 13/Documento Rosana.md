@@ -9,40 +9,40 @@
 ### 1. Introdução
 
 #### 1.1 Finalidade
-[cite_start]Este documento apresenta a visão geral do projeto do **Sistema de Alerta Inteligente (SAI)**, abordando objetivos, escopo, funcionalidades e usuários envolvidos[cite: 19]. [cite_start]Serve como referência para o alinhamento institucional e técnico da equipe responsável pelo desenvolvimento e implantação da solução[cite: 20].
+Este documento apresenta a visão geral do projeto do **Sistema de Alerta Inteligente (SAI)**, abordando objetivos, escopo, funcionalidades e usuários envolvidos. Serve como referência para o alinhamento institucional e técnico da equipe responsável pelo desenvolvimento e implantação da solução.
 
 #### 1.2 Escopo
-[cite_start]O sistema consiste em uma plataforma digital unificada voltada para o monitoramento ambiental, prevenção de riscos e emissão de alertas em tempo real para o IFSP - Câmpus São João da Boa Vista, Defesa Civil e parceiros[cite: 22]. [cite_start]O foco é a consolidação de dados e consulta pública de alertas, sem envolvimento direto com a gestão interna de equipes de campo[cite: 23]. 
+O sistema consiste em uma plataforma digital unificada voltada para o monitoramento ambiental, prevenção de riscos e emissão de alertas em tempo real para o IFSP - Câmpus São João da Boa Vista, Defesa Civil e parceiros. O foco é a consolidação de dados e consulta pública de alertas, sem envolvimento direto com a gestão interna de equipes de campo. 
 
-[cite_start]O sistema abrange todos os tipos de público, contando com acessibilidade rigorosa para pessoas com necessidades especiais de acordo com as normas W3C e WCAG[cite: 24]. [cite_start]Cada alerta, dado climático ou evento de risco mapeado será proveniente de sistemas e APIs integrados à plataforma que liberam informações públicas, utilizando métodos como[cite: 25]:
-* [cite_start]Consulta a informações internas e raspagem de dados (*data scraping*) dos sites e sensores das instituições parceiras[cite: 31].
+O sistema abrange todos os tipos de público, contando com acessibilidade rigorosa para pessoas com necessidades especiais de acordo com as normas W3C e WCAG. Cada alerta, dado climático ou evento de risco mapeado será proveniente de sistemas e APIs integrados à plataforma que liberam informações públicas, utilizando métodos como:
+* Consulta a informações internas e raspagem de dados (*data scraping*) dos sites e sensores das instituições parceiras.
 
-[cite_start]As principais informações serão exibidas em um painel web de forma responsiva através de um mapa interativo e banners de alerta urgentes [cite: 32][cite_start], além de uma seção adaptada com acessibilidade para pessoas com necessidades especiais[cite: 32]. [cite_start]Para que o sistema alcance o público-alvo de forma eficaz, serão desenvolvidas estratégias de Marketing de Utilidade Pública segmentadas por público e gravidade do risco[cite: 32]. [cite_start]Campanhas personalizadas em datas sazonais críticas (ex: períodos de alta estiagem ou fortes chuvas) serão criadas para ampliar o engajamento e a prevenção [cite: 33][cite_start], acompanhadas de análises contínuas de resultados para a evolução das estratégias[cite: 34].
+As principais informações serão exibidas em um painel web de forma responsiva através de um mapa interativo e banners de alerta urgentes , além de uma seção adaptada com acessibilidade para pessoas com necessidades especiais.Para que o sistema alcance o público-alvo de forma eficaz, serão desenvolvidas estratégias de Marketing de Utilidade Pública segmentadas por público e gravidade do risco. Campanhas personalizadas em datas sazonais críticas (ex: períodos de alta estiagem ou fortes chuvas) serão criadas para ampliar o engajamento e a prevenção, acompanhadas de análises contínuas de resultados para a evolução das estratégias.
 
 #### 1.3 Definições, Acrogramas e Abreviaturas
 * **SAI:** Sistema de Alerta Inteligente.
-* [cite_start]**IFSP:** Instituto Federal de Educação, Ciência e Tecnologia de São Paulo[cite: 37].
-* [cite_start]**W3C:** *World Wide Web Consortium* (Organização internacional que desenvolve padrões e diretrizes para a web, garantindo seu crescimento a longo prazo)[cite: 38, 39].
-* [cite_start]**WCAG:** *Web Content Accessibility Guidelines* (Diretrizes de Acessibilidade para Conteúdo Web)[cite: 40].
-* [cite_start]**PCD:** Pessoa com Deficiência[cite: 72].
+* **IFSP:** Instituto Federal de Educação, Ciência e Tecnologia de São Paulo.
+* **W3C:** *World Wide Web Consortium* (Organização internacional que desenvolve padrões e diretrizes para a web, garantindo seu crescimento a longo prazo).
+* **WCAG:** *Web Content Accessibility Guidelines* (Diretrizes de Acessibilidade para Conteúdo Web).
+* **PCD:** Pessoa com Deficiência.
 
 ---
 
 ### 2. Posicionamento
 
 #### 2.1 Descrição do Problema
-* [cite_start]**O problema:** Falta de um projeto integrador com a Defesa Civil, órgãos municipais e o Instituto Federal de São Paulo que vise o monitoramento ambiental e a propagação ágil de alertas de risco para a comunidade[cite: 46]. [cite_start]Há dificuldade na divulgação centralizada das ocorrências e dados preventivos [cite: 47][cite_start], agravada pela ausência de critérios de acessibilidade digital, o que gera exclusão de parte da comunidade[cite: 48]. [cite_start]Os sistemas das organizações associadas operam de forma isolada como sistemas legados, dificultando a interoperabilidade e a distribuição fluida da informação[cite: 55]. [cite_start]Além disso, nota-se a falta de estratégias de comunicação e marketing direcionadas a identificar e atingir o público de risco de forma dinâmica e sazonal[cite: 50, 55].
-* [cite_start]**Afeta:** Alunos, servidores, comunidade externa, moradores de áreas de risco, parceiros institucionais, pessoas com necessidades especiais e órgãos de monitoramento com escassez de dados integrados[cite: 55].
-* [cite_start]**O seu impacto é:** Baixa visibilidade de riscos iminentes, pouca participação em simulações preventivas, falta de organização das ações emergenciais, exclusão de PCDs de avisos vitais e desconhecimento geral das ferramentas de segurança disponíveis[cite: 55].
-* [cite_start]**A solução ideal seria:** Uma plataforma digital que reúna, organize e permita consultar alertas e dados ambientais promovidos pelo ecossistema do projeto[cite: 55]. [cite_start]A solução será construída através da integração de sistemas em uma única aplicação web, realizando a interoperabilidade entre aplicações (incluindo sistemas legado) [cite: 55] [cite_start]por meio de uma API de raspagem de dados públicos[cite: 55, 72]. [cite_start]Deve contar com estratégias de comunicação segmentadas por públicos e períodos sazonais estratégicos[cite: 55]. [cite_start]Para garantir a inclusão, a plataforma deve ser totalmente acessível (normas W3C e WCAG) [cite: 60] [cite_start]com filtros específicos informando as adaptações oferecidas (abrangendo Altas Habilidades, Transtornos Globais do Desenvolvimento e do Aprendizado)[cite: 60]. [cite_start]No cadastro, o usuário indicará sua necessidade especial para que o sistema recomende automaticamente o formato de alerta ideal para suas especificidades[cite: 61].
+* **O problema:** Falta de um projeto integrador com a Defesa Civil, órgãos municipais e o Instituto Federal de São Paulo que vise o monitoramento ambiental e a propagação ágil de alertas de risco para a comunidade. Há dificuldade na divulgação centralizada das ocorrências e dados preventivos, agravada pela ausência de critérios de acessibilidade digital, o que gera exclusão de parte da comunidade.Os sistemas das organizações associadas operam de forma isolada como sistemas legados, dificultando a interoperabilidade e a distribuição fluida da informação. Além disso, nota-se a falta de estratégias de comunicação e marketing direcionadas a identificar e atingir o público de risco de forma dinâmica e sazonal.
+* **Afeta:** Alunos, servidores, comunidade externa, moradores de áreas de risco, parceiros institucionais, pessoas com necessidades especiais e órgãos de monitoramento com escassez de dados integrados.
+* **O seu impacto é:** Baixa visibilidade de riscos iminentes, pouca participação em simulações preventivas, falta de organização das ações emergenciais, exclusão de PCDs de avisos vitais e desconhecimento geral das ferramentas de segurança disponíveis.
+* **A solução ideal seria:** Uma plataforma digital que reúna, organize e permita consultar alertas e dados ambientais promovidos pelo ecossistema do projeto. A solução será construída através da integração de sistemas em uma única aplicação web, realizando a interoperabilidade entre aplicações (incluindo sistemas legado) por meio de uma API de raspagem de dados públicos. Deve contar com estratégias de comunicação segmentadas por públicos e períodos sazonais estratégicos. Para garantir a inclusão, a plataforma deve ser totalmente acessível (normas W3C e WCAG) com filtros específicos informando as adaptações oferecidas (abrangendo Altas Habilidades, Transtornos Globais do Desenvolvimento e do Aprendizado). No cadastro, o usuário indicará sua necessidade especial para que o sistema recomende automaticamente o formato de alerta ideal para suas especificidades.
 
 #### 2.2 Sentença de Posição do Produto
-* [cite_start]**Para:** Membros da comunidade acadêmica, moradores de São João da Boa Vista e região, incluindo pessoas com necessidades especiais e áreas sob monitoramento de risco[cite: 64].
-* [cite_start]**Quem:** Desejam consultar alertas ambientais, riscos climáticos e eventos de emergência de maneira acessível, ágil e organizada[cite: 64].
-* [cite_start]**O Produto:** O Sistema de Alerta Inteligente (SAI)[cite: 64].
-* [cite_start]**Que:** É um sistema unificado de monitoramento preventivo e consulta digital de riscos e alertas[cite: 64].
-* [cite_start]**Diferentemente dos:** Meios dispersos, informais ou atrasados de divulgação de incidentes e boletins meteorológicos[cite: 64].
-* [cite_start]**Nosso produto:** Proporciona acesso centralizado, filtros de pesquisa por localidade/risco, interoperabilidade com sistemas legados e acessibilidade digital estrita[cite: 64].
+* **Para:** Membros da comunidade acadêmica, moradores de São João da Boa Vista e região, incluindo pessoas com necessidades especiais e áreas sob monitoramento de risco.
+* **Quem:** Desejam consultar alertas ambientais, riscos climáticos e eventos de emergência de maneira acessível, ágil e organizada.
+* **O Produto:** O Sistema de Alerta Inteligente (SAI).
+* **Que:** É um sistema unificado de monitoramento preventivo e consulta digital de riscos e alertas.
+* **Diferentemente dos:** Meios dispersos, informais ou atrasados de divulgação de incidentes e boletins meteorológicos.
+* **Nosso produto:** Proporciona acesso centralizado, filtros de pesquisa por localidade/risco, interoperabilidade com sistemas legados e acessibilidade digital estrita.
 
 ---
 
@@ -52,20 +52,20 @@
 
 | Nome | Descrição | Responsabilidades |
 | :--- | :--- | :--- |
-| **Instituto Federal de São Paulo (IFSP)** | [cite_start]Campus SJBV, alunos e pesquisadores interessados no funcionamento do sistema[cite: 72]. | [cite_start]Idealizador, gestor, mantenedor e desenvolvedor da plataforma técnica de alertas[cite: 72]. |
-| **Defesa Civil / Órgãos Parceiros** | [cite_start]Órgão municipal e entidades parceiras interessadas na implementação dos alertas[cite: 72]. | [cite_start]Fornecer a demanda de riscos, dados ambientais locais e validar as informações técnicas[cite: 72]. |
-| **Equipe Técnica e Docente do IFSP** | [cite_start]Professores e técnicos administrativos orientadores do projeto[cite: 72]. | [cite_start]Produção, supervisão técnica, validação científica e atualização das regras do sistema[cite: 72]. |
-| **População Sanjoanense e Região** | [cite_start]População geral, incluindo PCDs, pessoas com superdotação ou necessidades tecnológicas específicas[cite: 72]. | [cite_start]Usufruir da consulta de alertas, receber notificações preventivas e participar das ações coordenadas[cite: 72]. |
-| **API de Raspagem de Dados** | [cite_start]Módulo automatizado integrado ao ecossistema do projeto[cite: 72]. | [cite_start]Desenvolver uma API separada do sistema principal para realizar consultas automáticas e raspagem em bases de dados públicas parceiras[cite: 72]. |
+| **Instituto Federal de São Paulo (IFSP)** | Campus SJBV, alunos e pesquisadores interessados no funcionamento do sistema. | Idealizador, gestor, mantenedor e desenvolvedor da plataforma técnica de alertas. |
+| **Defesa Civil / Órgãos Parceiros** | Órgão municipal e entidades parceiras interessadas na implementação dos alertas. | Fornecer a demanda de riscos, dados ambientais locais e validar as informações técnicas. |
+| **Equipe Técnica e Docente do IFSP** | Professores e técnicos administrativos orientadores do projeto. | Produção, supervisão técnica, validação científica e atualização das regras do sistema. |
+| **População Sanjoanense e Região** | População geral, incluindo PCDs, pessoas com superdotação ou necessidades tecnológicas específicas. | Usufruir da consulta de alertas, receber notificações preventivas e participar das ações coordenadas. |
+| **API de Raspagem de Dados** | Módulo automatizado integrado ao ecossistema do projeto. | Desenvolver uma API separada do sistema principal para realizar consultas automáticas e raspagem em bases de dados públicas parceiras. |
 
 #### 3.2 Resumo dos Usuários
 
 | Nome | Descrição/Atitude | Grau de Poder | Grau de Interesse | Positivos | Negativos |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Usuário Público Geral** | [cite_start]Cidadão interessado em monitorar riscos e receber alertas na sua região[cite: 79]. | [cite_start]Baixo [cite: 79] | [cite_start]Alto [cite: 79] | [cite_start]Sim [cite: 79] | [cite_start]Não [cite: 79] |
-| **Docente / Técnico Operador** | [cite_start]Responsável por validar, cadastrar e emitir os alertas ou gerenciar dados[cite: 79]. | [cite_start]Médio [cite: 79] | [cite_start]Alto [cite: 79] | [cite_start]Sim [cite: 79] | [cite_start]Não [cite: 79] |
-| **Administrador do Sistema** | [cite_start]Gerencia a infraestrutura, permissões de acesso e suporte técnico das integrações[cite: 79]. | [cite_start]Alto [cite: 79] | [cite_start]Médio [cite: 79] | [cite_start]Sim [cite: 79] | [cite_start]Não [cite: 79] |
-| **PCDs ou Necessidades Específicas** | [cite_start]Usuários que necessitam de alertas em formatos acessíveis e customizados[cite: 79]. | [cite_start]Baixo [cite: 79] | [cite_start]Alto [cite: 79] | [cite_start]Sim [cite: 79] | [cite_start]Não [cite: 79] |
+| **Usuário Público Geral** | Cidadão interessado em monitorar riscos e receber alertas na sua região. | Baixo  | Alto  | Sim  |Não  |
+| **Docente / Técnico Operador** | Responsável por validar, cadastrar e emitir os alertas ou gerenciar dados. | Médio  | Alto  | Sim | Não  |
+| **Administrador do Sistema** | Gerencia a infraestrutura, permissões de acesso e suporte técnico das integrações. | Alto  | Médio  | Sim  | Não  |
+| **PCDs ou Necessidades Específicas** | Usuários que necessitam de alertas em formatos acessíveis e customizados. | Baixo  | Alto  | Sim  | Não  |
 
 #### 3.3 Necessidades Principais dos Envolvidos ou Usuários
 
